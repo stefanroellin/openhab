@@ -29,7 +29,9 @@ Bundle-SymbolicName: org.openhab.binding.mpd
 Bundle-DocURL: http://www.openhab.org
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Service-Component: OSGI-INF/binding.xml, OSGI-INF/genericbindingprovider.xml
-Bundle-ClassPath: lib/javampd-4.1.jar,
- .
+Bundle-ClassPath: .,
+ lib/javampd-6.0.0-SNAPSHOT.jar
 Export-Package: org.openhab.binding.mpd
+Require-Bundle: org.slf4j.api;bundle-version="1.7.2",
+ com.google.inject;bundle-version="3.0.0"
 
